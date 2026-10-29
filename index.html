@@ -236,6 +236,54 @@
       .float-btn{width:48px;height:48px}
     }
   </style>
+
+<!-- cj-video-size-overrides-v1 -->
+<style id="cj-video-size-overrides-v1">
+  /* Keep the original HQ files; only reduce their visual footprint. */
+  @media (min-width: 769px){
+    .results-featured{
+      max-width:820px;
+      margin-left:auto;
+      margin-right:auto;
+    }
+    .results-featured .featured-video{
+      width:100%;
+      max-width:360px;
+      margin-left:auto;
+      margin-right:auto;
+      justify-self:center;
+    }
+    .phone-video{
+      width:100%;
+      max-width:320px;
+      margin-left:auto;
+      margin-right:auto;
+      justify-self:center;
+    }
+  }
+  @media (max-width: 768px){
+    .results-featured{
+      width:100%;
+      max-width:100%;
+      gap:18px;
+    }
+    .results-featured .featured-video{
+      width:min(76vw, 285px);
+      max-width:285px;
+      margin-left:auto;
+      margin-right:auto;
+      justify-self:center;
+    }
+    .phone-video{
+      width:min(70vw, 250px);
+      max-width:250px;
+      margin-left:auto;
+      margin-right:auto;
+      justify-self:center;
+    }
+  }
+</style>
+
 </head>
 <body>
   <header class="site-header" id="header">
